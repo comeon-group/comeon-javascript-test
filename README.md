@@ -43,3 +43,33 @@ These parts needs all to be completed for the assignment to be complete:
 ## API
 
 *TODO*
+
+## Loading a game
+
+We are loading an API from one of our providers (NetEnt) into the HTML template. Here's a simple example on how to load a game through their API:
+
+```javascript
+var config = {
+	gameName: 'gonzos-quest.desktop',
+	staticServer: 'https://comeon-static.casinomodule.com',
+	gameServer: 'https://comeon-game.casinomodule.com',
+	sessionId: 'DEMO-1234',
+	targetElement: 'game',
+	width: 800,
+	height: 600
+};
+
+var success = function (netEntExtend) {
+	netEntExtend.resize(640, 480);
+};
+
+var error = function (e) {
+	console.error('Error loading game', e);
+};
+
+netent.launch(config, success, error);
+```
+
+Don't worry if it says the game is not currently available, loading the game is what counts.
+width/height is optional, as is the example for resizing in the success callback. targetElement is a HTML id.
+
