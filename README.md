@@ -12,7 +12,14 @@ Your mission is to provide the Javascript code that makes the parts work as desc
 The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and feel free to use any other openly available library for
 validation, templating, dependency injection, etc.
 
-## Assignment parts
+## Assignment criteria
+
+We want to see how you approach and solve a problem, as well as look at code style and quality. Do take your time to do it right, rather than fast.
+Extra effort to improve on the "website" will be noted. :)
+
+While the test is primarily focused on Javascript, by all means use or change the HTML or CSS when that makes sense.
+
+Be prepared to discuss your choices and code when delivered.
 
 These parts needs all to be completed for the assignment to be complete:
 
