@@ -1,3 +1,4 @@
+![comeon-javascript-test-site](http://b5fa2dae67bf7ee0b0e5-e0d56d540e31d5f2f9430984d20d712d.r41.cf3.rackcdn.com/comeon-javascript-test.PNG)
 # comeon-javascript-test
 
 Simple applicant's test for Javascript coders.
@@ -9,12 +10,12 @@ The assignment is to use Javascript and jQuery to tie together existing HTML and
 Basic HTML, CSS, images and JSON data is provided, however, feel free to impress by changing and enhancing any of these parts for an even better experience!
 
 Your mission is to provide the Javascript code that makes the parts work as described, below.
-The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and feel free to use any other openly available library for
-validation, templating, dependency injection, etc.
+The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and feel free to use any other openly available library for validation, templating, dependency injection, etc.
 
 ## Assignment criteria
 
-We want to see how you approach and solve a problem, as well as look at code style and quality. Do take your time to do it right, rather than fast.
+We want to see how you approach and solve a problem, as well as look at code style and quality.
+Do take your time to do it right, rather than fast.
 Extra effort to improve on the "website" will be noted. :)
 
 While the test is primarily focused on Javascript, by all means use or change the HTML or CSS when that makes sense.
@@ -35,7 +36,7 @@ These parts needs all to be completed for the assignment to be complete:
 * List categories from /categories ajax call.
 * Provide functionality for filtering by typing.
 * Provide functionality to filter by category.
-* Make it possible to start a game by clicking on the name or icon.
+* Make it possible to start a game by clicking on the play icon.
 
 ### Game play screen
 
@@ -87,7 +88,7 @@ $.ajax({
 ```
 
 ### Games and Categories
-These methods are located on path /games and /categories.
+These methods are located on paths /games and /categories.
 
 Please explore the response of these methods.
 
