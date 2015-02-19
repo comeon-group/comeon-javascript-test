@@ -76,8 +76,8 @@ $.mockjax({
     url: '/login',
     contentType: "application/json",
     response: function (settings) {
-        var username = settings.data.username.trim(),
-            password = settings.data.password.trim();
+        var username = settings.data.username,
+            password = settings.data.password;
 
         if (username in players && players[username].password === password) {
             this.responseText = {
