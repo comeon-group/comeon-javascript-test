@@ -91,7 +91,7 @@ The API is implemented in mock/mock-api.js.
 
 ## Loading a game
 
-We have written an API for loading the game. Here's a simple example on how to load a game through our API:
+We have written an API for loading the games. Here's a simple example of how to load a game through our API:
 
 ```javascript
 comeon.game.launch('starburst');
