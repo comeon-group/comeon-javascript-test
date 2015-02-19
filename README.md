@@ -32,7 +32,9 @@ These parts needs all to be completed for the assignment to be complete:
 ### Games list screen
 
 * List all games from the /games ajax call.
+* List categories from /categories ajax call.
 * Provide functionality for filtering by typing.
+* Provide functionality to filter by category.
 * Make it possible to start a game by clicking on the name or icon.
 
 ### Game play screen
@@ -85,7 +87,7 @@ $.ajax({
 ### Games and Categories
 These methods are located on path /games and /categories.
 
-Please explore the reponse of these methods.
+Please explore the response of these methods.
 
 The API is implemented in mock/mock-api.js.
 
