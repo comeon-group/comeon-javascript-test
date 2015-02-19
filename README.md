@@ -41,15 +41,53 @@ These parts needs all to be completed for the assignment to be complete:
 * Provide a way to go back to the Games list screen
 
 ## API
-TODO
+There are three methods on the API: login, games, and categories.
 
-Defined in mock/mock-api.js
+### Login
+Path: /login
 
-/login
+Will give you player information.
+It is possible to login with three accounts:
 
-/games
+```
+username: rebecka
+password: secret
 
-/categories
+username: eric
+password: dad
+
+username: stoffe 
+password: rock
+```
+#####Request
+```javascript
+$.ajax({
+	url: '/login',
+	data: {
+		username: 'rebecka',
+		password: 'secret'
+	}
+});
+```
+#####Response
+```javascript
+{
+	status: 'success',
+	player: {
+            name: 'Rebecka Awesome',
+            avatar: 'images/avatar/rebecka.jpg',
+            event: 'Last seen gambling on Starburst.',
+            password: 'secret'
+    }
+}
+```
+
+### Games and Categories
+These methods are located on path /games and /categories.
+
+Please explore the reponse of these methods.
+
+The API is implemented in mock/mock-api.js.
 
 ## Loading a game
 
