@@ -41,35 +41,24 @@ These parts needs all to be completed for the assignment to be complete:
 * Provide a way to go back to the Games list screen
 
 ## API
+TODO
 
-*TODO*
+Defined in mock/mock-api.js
+
+/login
+
+/games
+
+/categories
 
 ## Loading a game
 
-We are loading an API from one of our providers (NetEnt) into the HTML template. Here's a simple example on how to load a game through their API:
+We have written an API for loading the game. Here's a simple example on how to load a game through our API:
 
 ```javascript
-var config = {
-	gameName: 'gonzos-quest.desktop',
-	staticServer: 'https://comeon-static.casinomodule.com',
-	gameServer: 'https://comeon-game.casinomodule.com',
-	sessionId: 'DEMO-1234',
-	targetElement: 'game',
-	width: 800,
-	height: 600
-};
-
-var success = function (netEntExtend) {
-	netEntExtend.resize(640, 480);
-};
-
-var error = function (e) {
-	console.error('Error loading game', e);
-};
-
-netent.launch(config, success, error);
+comeon.game.launch('starburst');
 ```
 
-Don't worry if it says the game is not currently available, loading the game is what counts.
-width/height is optional, as is the example for resizing in the success callback. targetElement is a HTML id.
+It basically takes a game code as an in parameter.
+The div with id game-launch will be replaced with an object tag that loads the game.
 
