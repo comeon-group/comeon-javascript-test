@@ -36,7 +36,7 @@ These parts needs all to be completed for the assignment to be complete:
 * List categories from /categories ajax call.
 * Provide functionality for filtering by typing.
 * Provide functionality to filter by category.
-* Make it possible to start a game by clicking on the name or icon.
+* Make it possible to start a game by clicking on the play icon.
 
 ### Game play screen
 
