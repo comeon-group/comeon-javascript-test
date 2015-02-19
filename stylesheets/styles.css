@@ -1,0 +1,17 @@
+body {
+    background-color: #444;
+}
+.main.container {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 2em 2em 7em;
+    max-width: 990px;
+}
+
+.field {
+    margin: 10px;
+}
+
+.search {
+    float: right;
+}
