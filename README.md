@@ -58,9 +58,10 @@ password: secret
 username: eric
 password: dad
 
-username: stoffe 
+username: stoffe
 password: rock
 ```
+
 #####Request
 ```javascript
 $.ajax({
@@ -71,6 +72,7 @@ $.ajax({
 	}
 });
 ```
+
 #####Response
 ```javascript
 {
@@ -102,3 +104,7 @@ comeon.game.launch('starburst');
 It basically takes a game code as an in parameter.
 The div with id game-launch will be replaced with an object tag that loads the game.
 
+## More info
+
+External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mockjax](https://github.com/jakerella/jquery-mockjax),
+[SWFObject](https://code.google.com/p/swfobject/), [Semantic UI](http://semantic-ui.com/)
