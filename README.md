@@ -12,7 +12,7 @@ Basic HTML, CSS, images and JSON data is provided, however, feel free to impress
 Your mission is to provide the Javascript code that makes the parts work as described, below.
 The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and feel free to use any other openly available library for validation, templating, dependency injection, etc.
 
-## Assignment criteria
+## Assignment Criteria
 
 We want to see how you approach and solve a problem, as well as look at code style and quality.
 Do take your time to do it right, rather than fast.
