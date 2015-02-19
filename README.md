@@ -2,7 +2,7 @@
 
 Simple applicant's test for Javascript coders.
 
-## Assignment overview
+## Assignment Overview
 
 The assignment is to use Javascript and jQuery to tie together existing HTML and data to create a minimal, working casino website.
 
