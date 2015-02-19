@@ -112,4 +112,4 @@ External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mock
 
 ## Found a bug?
 
-Pull requests welcome, and maybe we have a job for you? :)
+Pull requests welcome, and maybe [we have a job for you](http://jobs.comeon.com/)? :)
