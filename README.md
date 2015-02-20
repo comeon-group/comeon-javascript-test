@@ -10,7 +10,7 @@ The assignment is to use Javascript and jQuery to tie together existing HTML and
 Basic HTML, CSS, images and JSON data is provided, however, feel free to impress by changing and enhancing any of these parts for an even better experience!
 
 Your mission is to provide the Javascript code that makes the parts work as described, below.
-The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and feel free to use any other openly available library for validation, templating, dependency injection, etc.
+The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and **feel free to use any other openly available library for validation, templating, dependency injection, etc.**
 
 ## Assignment Criteria
 
