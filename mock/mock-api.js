@@ -52,7 +52,7 @@ var players = {
             name: 'Twin Spin',
             description: 'The Twin Spin video slot has a Las Vegas theme brought into the 21st Century! Each spin starts with identical, adjacent twin reels that are linked together. During the spin the twin reels can expand to become triplet, quadruplet or even quintuplet reels. The unique reel synchronising and linking feature that appears on every single spin and the 243 ways to win makes for massive payouts!',
             code: 'twinspin',
-            icon: 'images/game-icon/starburst.jpg',
+            icon: 'images/game-icon/twinspin.jpg',
             categoryIds: [0, 1]
         }
 
