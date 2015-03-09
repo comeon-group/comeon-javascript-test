@@ -44,7 +44,7 @@ These parts needs all to be completed for the assignment to be complete:
 * Provide a way to go back to the Games list screen
 
 ## API
-There are three methods on the API: login, games, and categories.
+There are three methods on the API: login, logout, games, and categories.
 
 ### Login
 Path: /login
@@ -67,6 +67,7 @@ password: rock
 ```javascript
 $.ajax({
 	url: '/login',
+	type : 'POST',
 	data: {
 		username: 'rebecka',
 		password: 'secret'
@@ -85,6 +86,21 @@ $.ajax({
             password: 'secret'
     }
 }
+```
+
+### Log Out
+Path: /logout
+
+Use the current player's username.
+#####Request
+```javascript
+$.ajax({
+	url: '/logout',
+	type : 'POST',
+	data: {
+		username: 'rebecka',
+	}
+});
 ```
 
 ### Games and Categories
