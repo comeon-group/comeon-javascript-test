@@ -5,7 +5,7 @@ Applicant's test for Javascript coders.
 
 ## Assignment Overview
 
-The assignment is to use Javascript and jQuery to tie together existing HTML and data to create a minimal, working casino website.
+The assignment is to use Javascript to tie together existing HTML and data to create a minimal, working casino website.
 
 Basic HTML, CSS, images and JSON data is provided, however, feel free to impress by changing and enhancing any of these parts for an even better experience!
 
