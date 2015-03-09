@@ -93,7 +93,7 @@ $.ajax({
 }
 ```
 
-### Log Out
+### Log out
 Path: /logout
 
 Use the current player's username.
