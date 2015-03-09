@@ -77,7 +77,7 @@
 
     $.mockjax({
         url: '/login',
-        contentType: "application/json",
+        contentType: 'application/json',
         response: function (settings) {
             var username = settings.data.username,
                 password = settings.data.password;
@@ -98,13 +98,31 @@
 
     $.mockjax({
         url: '/games',
-        contentType: "application/json",
+        contentType: 'application/json',
         responseText: games
     });
 
     $.mockjax({
         url: '/categories',
-        contentType: "application/json",
+        contentType: 'application/json',
         responseText: categories
     });
+    
+    $.mockjax({
+    url: '/logout',
+    contentType: 'application/json',
+    response: function (settings) {
+        var username = settings.data.username;          
+        if (username in players) {
+            this.responseText = {
+                status: 'success'  
+            }
+        } else {
+            this.responseText = {
+                status: 'fail',
+                error: 'Username do not match!'
+            }
+        }
+    }
+});
 })(jQuery);
