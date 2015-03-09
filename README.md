@@ -49,7 +49,7 @@ These parts needs all to be completed for the assignment to be complete:
 * Provide a way to go back to the Games list screen
 
 ## API
-There are three methods on the API: login, logout, games, and categories.
+There are four methods on the API: login, logout, games, and categories.
 
 ### Login
 Path: /login
