@@ -30,6 +30,11 @@ These parts needs all to be completed for the assignment to be complete:
 * On valid username/password, transition to the games list screen.
 * On invalid username/password, provide feedback and allow to try again.
 
+### Log Out functionality
+
+* Connect the log out button to the /logout ajax call.
+* On valid log out, transition to login screen with empty input fields.
+
 ### Games list screen
 
 * List all games from the /games ajax call.
