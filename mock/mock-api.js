@@ -109,20 +109,20 @@
     });
     
     $.mockjax({
-    url: '/logout',
-    contentType: 'application/json',
-    response: function (settings) {
-        var username = settings.data.username;          
-        if (username in players) {
-            this.responseText = {
-                status: 'success'  
-            }
-        } else {
-            this.responseText = {
-                status: 'fail',
-                error: 'Username do not match!'
+        url: '/logout',
+        contentType: 'application/json',
+        response: function (settings) {
+            var username = settings.data.username;          
+            if (username in players) {
+                this.responseText = {
+                    status: 'success'  
+                }
+            } else {
+                this.responseText = {
+                    status: 'fail',
+                    error: 'Username do not match!'
+                }
             }
         }
-    }
-});
+    });
 })(jQuery);
