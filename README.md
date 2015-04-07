@@ -134,3 +134,7 @@ External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mock
 ## Found a bug?
 
 Pull requests welcome, and maybe [we have a job for you](http://jobs.comeon.com/)? :)
+
+## How to Submit the Home Assignment
+Please, send us your code in a compressed file in an email.
+
