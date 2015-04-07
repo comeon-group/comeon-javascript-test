@@ -35,7 +35,7 @@
                 description: 'Jack Hammer is a 25-line, 3-row video slot using 15 independent reels set in the gritty, glamorous underworld of a crime fighting private eye.The game features Sticky Wins, Free Spins and Wild Substitutions.',
                 code: 'jackhammer',
                 icon: 'images/game-icon/jackhammer.jpg',
-                categoryIds: [0, 1, ]
+                categoryIds: [0, 1]
             },
             {
                 name: 'Jack and the Beanstalk',
