@@ -86,12 +86,12 @@
                 this.responseText = {
                     status: 'success',
                     player: players[username]
-                }
+                };
             } else {
                 this.responseText = {
                     status: 'fail',
                     error: 'player does not exist or wrong password'
-                }
+                };
             }
         }
     });
@@ -116,12 +116,12 @@
             if (username in players) {
                 this.responseText = {
                     status: 'success'  
-                }
+                };
             } else {
                 this.responseText = {
                     status: 'fail',
                     error: 'Username do not match!'
-                }
+                };
             }
         }
     });
