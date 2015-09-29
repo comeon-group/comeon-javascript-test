@@ -103,7 +103,7 @@ $.ajax({
 	url: '/logout',
 	type : 'POST',
 	data: {
-		username: 'rebecka',
+		username: 'rebecka'
 	}
 });
 ```
