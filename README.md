@@ -128,8 +128,7 @@ The div with id game-launch will be replaced with an object tag that loads the g
 
 ## More info
 
-External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mockjax](https://github.com/jakerella/jquery-mockjax),
-[SWFObject](https://code.google.com/p/swfobject/), [Semantic UI](http://semantic-ui.com/)
+External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mockjax](https://github.com/jakerella/jquery-mockjax), [Semantic UI](http://semantic-ui.com/)
 
 ## Found a bug?
 
