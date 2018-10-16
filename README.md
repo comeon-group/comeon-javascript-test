@@ -10,7 +10,7 @@ The assignment is to use Javascript to tie together existing HTML and data to cr
 Basic HTML, CSS, images and JSON data is provided, however, feel free to impress by changing and enhancing any of these parts for an even better experience!
 
 Your mission is to provide the Javascript code that makes the parts work as described, below.
-The data is provided via jQuery’s [$.ajax()](http://api.jquery.com/jquery.ajax/) call, and **feel free to use any other openly available library for validation, templating, dependency injection, etc.**
+**Feel free to use any other openly available library for validation, templating, dependency injection, etc.**
 
 ## Assignment Criteria
 
@@ -48,6 +48,15 @@ These parts needs all to be completed for the assignment to be complete:
 * Load the selected game via the provided API
 * Provide a way to go back to the Games list screen
 
+### Setup mock api
+```javascript
+npm install -g json-server
+```
+
+```javascript
+json-server --watch mock/mock-data.json --port 3001 --middlewares mock/mock-api.js
+```
+
 ## API
 There are four methods on the API: login, logout, games, and categories.
 
@@ -70,14 +79,18 @@ password: rock
 
 #####Request
 ```javascript
-$.ajax({
-	url: '/login',
-	type : 'POST',
-	data: {
-		username: 'rebecka',
-		password: 'secret'
-	}
-});
+fetch('http://localhost:3001/login', {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: 'rebecka',
+                password: 'secret'
+            })
+        }
+);
 ```
 
 #####Response
@@ -87,8 +100,7 @@ $.ajax({
 	player: {
             name: 'Rebecka Awesome',
             avatar: 'images/avatar/rebecka.jpg',
-            event: 'Last seen gambling on Starburst.',
-            password: 'secret'
+            event: 'Last seen gambling on Starburst.'            
     }
 }
 ```
@@ -99,21 +111,27 @@ Path: /logout
 Use the current player's username.
 #####Request
 ```javascript
-$.ajax({
-	url: '/logout',
-	type : 'POST',
-	data: {
-		username: 'rebecka'
-	}
-});
+fetch('http://localhost:3001/logout', {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: 'rebecka'
+            })
+        }
+);
 ```
 
 ### Games and Categories
 These methods are located on paths /games and /categories.
 
 Please explore the response of these methods.
+```javascript
+fetch('http://localhost:3001/games', { method: 'get' });
+```
 
-The API is implemented in mock/mock-api.js.
 
 ## Loading a game
 
@@ -128,7 +146,7 @@ The div with id game-launch will be replaced with an object tag that loads the g
 
 ## More info
 
-External libraries used in this test: [jQuery](http://jquery.com/), [jquery-mockjax](https://github.com/jakerella/jquery-mockjax), [Semantic UI](http://semantic-ui.com/)
+External libraries used in this test: [Semantic UI](http://semantic-ui.com/)
 
 ## Found a bug?
 
