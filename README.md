@@ -77,7 +77,7 @@ username: stoffe
 password: rock
 ```
 
-#####Request
+##### Request
 ```javascript
 fetch('http://localhost:3001/login', {
             method: 'post',
@@ -93,7 +93,7 @@ fetch('http://localhost:3001/login', {
 );
 ```
 
-#####Response
+##### Response
 ```javascript
 {
 	status: 'success',
@@ -109,7 +109,8 @@ fetch('http://localhost:3001/login', {
 Path: /logout
 
 Use the current player's username.
-#####Request
+
+##### Request
 ```javascript
 fetch('http://localhost:3001/logout', {
             method: 'post',
