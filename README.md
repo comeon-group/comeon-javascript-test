@@ -37,6 +37,7 @@ These parts needs all to be completed for the assignment to be complete:
 
 ### Games list screen
 
+* Requires user to be logged in
 * List all games from the /games ajax call.
 * List categories from /categories ajax call.
 * Provide functionality for filtering by typing.
@@ -45,6 +46,7 @@ These parts needs all to be completed for the assignment to be complete:
 
 ### Game play screen
 
+* Requires user to be logged in
 * Load the selected game via the provided API
 * Provide a way to go back to the Games list screen
 
@@ -147,7 +149,8 @@ The div with id game-launch will be replaced with an object tag that loads the g
 
 ## More info
 
-External libraries used in this test: [Semantic UI](http://semantic-ui.com/), [json-server](https://github.com/typicode/json-server)
+- Use of [jQuery](https://jquery.com/) is discouraged. 
+- External libraries used in this test: [Semantic UI](http://semantic-ui.com/), [json-server](https://github.com/typicode/json-server)
 
 ## Found a bug?
 
