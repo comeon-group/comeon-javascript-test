@@ -147,7 +147,7 @@ The div with id game-launch will be replaced with an object tag that loads the g
 
 ## More info
 
-External libraries used in this test: [Semantic UI](http://semantic-ui.com/)
+External libraries used in this test: [Semantic UI](http://semantic-ui.com/), [json-server](https://github.com/typicode/json-server)
 
 ## Found a bug?
 
