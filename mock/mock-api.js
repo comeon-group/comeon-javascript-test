@@ -27,11 +27,11 @@ module.exports = (req, res, next) => {
             const password = req.body.password;
             console.log(username);
             if (username in players && players[username].password === password) {
-                const player = players[username];
+                const player = Object.assign({}, players[username]); //Creating a copy of player
                 delete player.password;
                 res.status(200).json({
                     status: 'success',
-                    player: players[username]
+                    player
                 });
             } else {
                 res.status(400).json({
