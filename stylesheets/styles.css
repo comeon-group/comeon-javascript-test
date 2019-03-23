@@ -15,3 +15,11 @@ body {
 .search {
     float: right;
 }
+
+.category.item {
+    opacity: .7;
+}
+
+.category.item.selected {
+    opacity: 1;
+}

@@ -3,11 +3,8 @@
 <head>
     <title>ComeOn Javascript Test</title>
     <link href="images/favicon.ico" rel="shortcut icon">
+    <!-- Head -->
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/semantic.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
-
-    <script src="lib/comeon.game-1.0.min.js"></script>
 </head>
 <body>
 <div class="ui one column center aligned page grid">
@@ -15,20 +12,33 @@
         <img src="images/logo.svg" alt="logo">
     </div>
 </div>
-<div class="main container">
-    <div class="login" style="display:block;">
+<div class="main container" id="main-container"></div>
+<template id="login">
+    <div>
         <div class="ui grid centered">
-            <form>
+            <form id="login-form">
                 <div class="fields">
                     <div class="required field">
                         <div class="ui icon input">
-                            <input type="text" name="username" placeholder="Username">
+                            <input
+                                type="text"
+                                name="username"
+                                placeholder="Username"
+                                required
+                                autocomplete="username"
+                            >
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="required field">
                         <div class="ui icon input">
-                            <input type="password" name="password" placeholder="Password">
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                                required
+                                autocomplete="current-password"
+                            >
                             <i class="lock icon"></i>
                         </div>
                     </div>
@@ -42,30 +52,19 @@
             </form>
         </div>
     </div>
-    <div class="casino" style="display:none;">
+</template>
+<template id="casino">
+    <div>
         <div class="ui grid centered">
             <div class="twelve wide column">
-                <div class="ui list">
-
-                    <!-- player item template -->
-                    <div class="player item">
-                        <img class="ui avatar image" src="" alt="avatar">
-
-                        <div class="content">
-                            <div class="header"><b class="name"></b></div>
-                            <div class="description event"></div>
-                        </div>
-                    </div>
-                    <!-- end player item template -->
-
-                </div>
-                <div class="logout ui left floated secondary button inverted">
+                <div class="ui list" id="player-list"></div>
+                <div class="logout ui left floated secondary button inverted" id="logout">
 					<i class="left chevron icon"></i>Log Out
 				</div>
             </div>
             <div class="four wide column">
                 <div class="search ui small icon input ">
-                    <input type="text" placeholder="Search Game">
+                    <input type="text" placeholder="Search Game" id="search">
                     <i class="search icon"></i>
                 </div>
             </div>
@@ -73,53 +72,22 @@
         <div class="ui grid">
             <div class="twelve wide column">
                 <h3 class="ui dividing header">Games</h3>
-
-                <div class="ui relaxed divided game items links">
-
-                    <!-- game item template -->
-                    <div class="game item">
-                        <div class="ui small image">
-                            <img src="" alt="game-icon">
-                        </div>
-                        <div class="content">
-                            <div class="header"><b class="name"></b></div>
-                            <div class="description">
-                            </div>
-                            <div class="extra">
-                                <div class="play ui right floated secondary button inverted">
-                                    Play
-                                    <i class="right chevron icon"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end game item template -->
-
-                </div>
+                <div class="ui relaxed divided game items links" id="game-item-list"></div>
             </div>
             <div class="four wide column">
                 <h3 class="ui dividing header">Categories</h3>
 
-                <div class="ui selection animated list category items">
-
-                    <!-- category item template -->
-                    <div class="category item">
-                        <div class="content">
-                            <div class="header"></div>
-                        </div>
-                    </div>
-                    <!-- end category item template -->
-
-                </div>
+                <div class="ui selection animated list category items" id="category-item-list"></div>
             </div>
         </div>
 
     </div>
-    <div class="ingame" style="display: none;">
+</template>
+<template id="ingame">
+    <div>
         <div class="ui grid centered">
             <div class="three wide column">
-                <div class="ui right floated secondary button inverted"><i class="left chevron icon"></i>Back
+                <div class="ui right floated secondary button inverted" id="back-to-casino"><i class="left chevron icon"></i>Back
                 </div>
             </div>
             <div class="ten wide column">
@@ -129,6 +97,44 @@
             <div class="three wide column"></div>
         </div>
     </div>
-</div>
+</template>
+<template id="player-info">
+    <div class="player item">
+        <img class="ui avatar image" src="" alt="avatar">
+
+        <div class="content">
+            <div class="header"><b class="name"></b></div>
+            <div class="description event"></div>
+        </div>
+    </div>
+</template>
+<template id="category-item">
+    <div class="category item">
+        <div class="content">
+            <div class="header"></div>
+        </div>
+    </div>
+</template>
+<template id="game-item">
+    <div class="game item">
+        <div class="ui small image">
+            <img src="" alt="game-icon">
+        </div>
+        <div class="content">
+            <div class="header"><b class="name"></b></div>
+            <div class="description">
+            </div>
+            <div class="extra">
+                <div class="play ui right floated secondary button inverted" id="launch-game">
+                    Play
+                    <i class="right chevron icon"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+<script defer src="lib/comeon.game-1.0.min.js"></script>
+<script src="/js/app.js" type="module" async></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+{
+  "name": "comeon-javascript-test",
+  "version": "1.0.0",
+  "description": "technical challenge for bilge kaan boluk's recruitment process",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kboluk/comeon-javascript-test.git"
+  },
+  "keywords": [
+    "semantic-ui",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Bilge Kaan Boluk",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kboluk/comeon-javascript-test/issues"
+  },
+  "homepage": "https://github.com/kboluk/comeon-javascript-test#readme",
+  "dependencies": {
+    "express": "4.16.4",
+    "purgecss": "1.1.0"
+  },
+  "devDependencies": {
+    "standard": "12.0.1"
+  },
+  "standard": {
+    "ignore": ["/stylesheets", "/mock"]
+  }
+}
