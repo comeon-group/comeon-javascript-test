@@ -149,6 +149,7 @@ The div with id game-launch will be replaced with an object tag that loads the g
 
 ## More info
 
+- Use of React is encouraged.
 - Use of [jQuery](https://jquery.com/) is discouraged. 
 - External libraries used in this test: [Semantic UI](http://semantic-ui.com/), [json-server](https://github.com/typicode/json-server)
 
