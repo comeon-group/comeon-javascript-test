@@ -158,5 +158,5 @@ The div with id game-launch will be replaced with an object tag that loads the g
 Pull requests welcome, and maybe [we have a job for you](http://jobs.comeon.com/)? :)
 
 ## How to Submit the Home Assignment
-Please, send us your code in a compressed file in an email.
+We would prefer that you push the code to a git repo and send us the link, but you could also send us your code in a compressed file in an email.
 
