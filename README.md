@@ -20,7 +20,7 @@ Extra effort to improve on the "website" will be noted. :)
 
 While the test is primarily focused on Javascript, by all means use or change the HTML or CSS when that makes sense.
 
-Be prepared to discuss your choices and code when delivered.
+Be prepared to discuss your choices and code when delivered. We would also expect you to answer on how to extend the application to include more features and functionality.
 
 These parts needs all to be completed for the assignment to be complete:
 
