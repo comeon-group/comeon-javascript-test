@@ -18,7 +18,7 @@ We want to see how you approach and solve a problem, as well as look at code sty
 Do take your time to do it right, rather than fast.
 Extra effort to improve on the "website" will be noted. :)
 
-While the test is primarily focused on Javascript, by all means use or change the HTML or CSS when that makes sense.
+While the test is primarily focused on Javascript, by all means use or change the HTML or CSS when that makes sense. We expect the app to be functional across various devices a.k.a responsive.
 
 Be prepared to discuss your choices and code when delivered. We would also expect you to answer on how to extend the application to include more features and functionality.
 
