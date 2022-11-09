@@ -1,0 +1,6 @@
+*.snippet.js
+/build
+/public
+/static
+/mock
+/lib
