@@ -24,7 +24,7 @@ export function Login() {
       password,
     }).then((res) => {
       localStorage.setItem("user", JSON.stringify(res.player))
-      window.location.href = "/home"
+      window.location.href = "/"
     })
   }
 
