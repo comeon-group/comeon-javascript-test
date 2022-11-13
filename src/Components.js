@@ -80,7 +80,7 @@ export const Button = Stitches.styled("button", {
     },
     bg: {
       primary: {
-        backgroundColor: "#2196f3",
+        backgroundColor: "#8EB50D",
         "&:hover": {
           backgroundColor: "#64b5f6",
         },

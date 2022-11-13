@@ -43,8 +43,23 @@ export function Login() {
   }
 
   return (
-    <Components.Container align="center">
-      <Components.Box css={{ paddingTop: "20px" }}>
+    <Components.Container
+      align="center"
+      css={{
+        padding: "40px",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <Components.Box
+        css={{
+          padding: "35px",
+          border: "solid 2px #8EB50D",
+          flexDirection: "column",
+          backgroundColor: "grey",
+        }}
+      >
+        <Components.Avatar align="center" size="large" src="/images/logo.svg" />
         <form noValidate onSubmit={handleSubmit}>
           <Components.Input
             size="large"
@@ -56,9 +71,17 @@ export function Login() {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Components.Button size="large" bg="primary">
-            Login
-          </Components.Button>
+          <Components.Box
+            css={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "8px",
+            }}
+          >
+            <Components.Button size="large" bg="primary">
+              Login
+            </Components.Button>
+          </Components.Box>
         </form>
       </Components.Box>
     </Components.Container>
