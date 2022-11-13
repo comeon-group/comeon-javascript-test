@@ -26,26 +26,27 @@ const injectGlobalStyles = stitches.globalCss({
     boxSizing: "border-box",
     fontFamily: "'Helvetica', 'Arial', sans-serif",
   },
-  body: { margin: 0, padding: 0 },
+  body: { margin: 0, padding: 0, width: "100%" },
 })
 
 injectGlobalStyles()
 
 export const Box = Stitches.styled("div", {
   display: "flex",
-  justifyContent: "center",
-  flexDirection: "column",
 
   variants: {
     align: {
       center: {
         alignItems: "center",
+        justifyContent: "center",
       },
       left: {
         alignItems: "flex-start",
+        justifyContent: "center",
       },
       right: {
         alignItems: "flex-end",
+        justifyContent: "flex-end",
       },
     },
   },
@@ -133,8 +134,6 @@ export const Container = Stitches.styled("div", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  padding: "10px",
-  backgroundColor: "white",
 
   variants: {
     size: {
@@ -167,7 +166,7 @@ export const Navbar = Stitches.styled("nav", {
   justifyContent: "space-between",
   alignItems: "center",
   padding: "10px",
-  backgroundColor: "white",
+
   borderBottom: "1px solid #e6e6e6",
   // base styles
   variants: {
@@ -184,27 +183,15 @@ export const Navbar = Stitches.styled("nav", {
     bg: {
       primary: {
         backgroundColor: "#2196f3",
-        "&:hover": {
-          backgroundColor: "#64b5f6",
-        },
       },
       secondary: {
         backgroundColor: "#009688",
-        "&:hover": {
-          backgroundColor: "#4db6ac",
-        },
       },
       danger: {
         backgroundColor: "#f44336",
-        "&:hover": {
-          backgroundColor: "#ef9a9a",
-        },
       },
       success: {
         backgroundColor: "#4caf50",
-        "&:hover": {
-          backgroundColor: "#a5d6a7",
-        },
       },
     },
   },
@@ -221,8 +208,8 @@ export const Avatar = Stitches.styled("img", {
         height: "25px",
       },
       lg: {
-        width: "50px",
-        height: "50px",
+        width: "90px",
+        height: "90px",
       },
     },
     align: {
