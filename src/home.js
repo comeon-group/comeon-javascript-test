@@ -13,8 +13,28 @@ export function Home() {
   return (
     <Components.Container>
       <Components.Navbar bg="primary">
-        <Components.Avatar size="sm" src={user.avatar} />
-        <Components.Button size="small" onClick={handleLogout}>
+        <Components.Box css={{ flexDirection: "row" }}>
+          <Components.Avatar
+            size="sm"
+            src={user.avatar}
+            css={{ borderRadius: "50%" }}
+          />
+          <Components.Box css={{ flexDirection: "column", paddingLeft: "4px" }}>
+            <Components.Box
+              css={{
+                fontSize: "14px",
+                fontWeight: "700",
+                paddingBottom: "2px",
+              }}
+            >
+              {user.name}
+            </Components.Box>
+            <Components.Box css={{ fontSize: "12px" }}>
+              {user.event}
+            </Components.Box>
+          </Components.Box>
+        </Components.Box>
+        <Components.Button bg="primary" size="small" onClick={handleLogout}>
           LOG OUT
         </Components.Button>
       </Components.Navbar>

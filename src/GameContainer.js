@@ -38,17 +38,11 @@ export function GameContainer() {
         <Components.Box
           css={{
             fontWeight: "700",
-            flexDirection: "column",
-            flex: "75%",
-            "&:after": {
-              content: "",
-              border: "1px solid grey",
-              alignSelf: "stretch",
-            },
           }}
         >
           Games
         </Components.Box>
+
         {filteredGames.map((game) => (
           <Components.Box
             key={game.code}
@@ -145,6 +139,7 @@ export function GameContainer() {
               fontWeight: "700",
               cursor: "pointer",
               paddingBottom: "4px",
+              textAlign: "start",
             }}
           >
             {category?.name}

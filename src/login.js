@@ -1,4 +1,5 @@
 import * as React from "react"
+import { toast } from "react-toastify"
 import * as Components from "./Components"
 
 async function loginUser(credentials) {
@@ -23,14 +24,27 @@ export function Login() {
       username,
       password,
     }).then((res) => {
-      localStorage.setItem("user", JSON.stringify(res.player))
-      window.location.href = "/"
+      if (res.status === "success") {
+        localStorage.setItem("user", JSON.stringify(res.player))
+        window.location.href = "/"
+      } else {
+        toast.error(res.error, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        })
+      }
     })
   }
 
   return (
     <Components.Container align="center">
-      <Components.Box border="solid">
+      <Components.Box css={{ paddingTop: "20px" }}>
         <form noValidate onSubmit={handleSubmit}>
           <Components.Input
             size="large"

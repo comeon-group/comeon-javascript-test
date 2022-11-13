@@ -166,23 +166,12 @@ export const Navbar = Stitches.styled("nav", {
   justifyContent: "space-between",
   alignItems: "center",
   padding: "10px",
-
   borderBottom: "1px solid #e6e6e6",
-  // base styles
+
   variants: {
-    size: {
-      sm: {
-        width: "100%",
-        height: "50px",
-      },
-      lg: {
-        width: "100%",
-        height: "60px",
-      },
-    },
     bg: {
       primary: {
-        backgroundColor: "#2196f3",
+        backgroundColor: "white",
       },
       secondary: {
         backgroundColor: "#009688",
@@ -204,18 +193,12 @@ export const Avatar = Stitches.styled("img", {
   variants: {
     size: {
       sm: {
-        width: "25px",
-        height: "25px",
+        width: "35px",
+        height: "35px",
       },
       lg: {
         width: "90px",
         height: "90px",
-      },
-    },
-    align: {
-      center: {
-        margin: "0 auto",
-        marginBottom: "10px",
       },
     },
   },
