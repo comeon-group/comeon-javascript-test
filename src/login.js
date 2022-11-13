@@ -63,7 +63,7 @@ export function Login() {
         <form noValidate onSubmit={handleSubmit}>
           <Components.Input
             size="large"
-            placeholder="username"
+            placeholder="Username"
             onChange={(e) => setUserName(e.target.value)}
           />
           <Components.Input
