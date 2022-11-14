@@ -62,12 +62,12 @@ export function Login() {
         <Components.Avatar align="center" size="large" src="/images/logo.svg" />
         <form noValidate onSubmit={handleSubmit}>
           <Components.Input
-            size="large"
+            size="sm"
             placeholder="Username"
             onChange={(e) => setUserName(e.target.value)}
           />
           <Components.Input
-            size="large"
+            size="sm"
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -78,7 +78,7 @@ export function Login() {
               paddingTop: "8px",
             }}
           >
-            <Components.Button size="large" bg="primary">
+            <Components.Button size="lg" bg="primary">
               Login
             </Components.Button>
           </Components.Box>

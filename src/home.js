@@ -34,7 +34,7 @@ export function Home() {
             </Components.Box>
           </Components.Box>
         </Components.Box>
-        <Components.Button bg="primary" size="small" onClick={handleLogout}>
+        <Components.Button bg="primary" size="sm" onClick={handleLogout}>
           LOG OUT
         </Components.Button>
       </Components.Navbar>

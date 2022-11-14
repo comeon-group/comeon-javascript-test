@@ -1,36 +1,5 @@
 import * as Stitches from "@stitches/react"
 
-const stitches = Stitches.createStitches({
-  media: {
-    bp1: "(min-width: 320px)",
-    bp2: "(min-width: 768px)",
-    bp3: "(min-width: 1200px)",
-  },
-  fontSizes: {
-    sm: "10px",
-    md: "16px",
-    lg: "20px",
-  },
-})
-
-const injectGlobalStyles = stitches.globalCss({
-  "*": {
-    boxSizing: "border-box",
-    fontFamily: "'Helvetica', 'Arial', sans-serif",
-  },
-  "*:after": {
-    boxSizing: "border-box",
-    fontFamily: "'Helvetica', 'Arial', sans-serif",
-  },
-  "*:before": {
-    boxSizing: "border-box",
-    fontFamily: "'Helvetica', 'Arial', sans-serif",
-  },
-  body: { margin: 0, padding: 0, width: "100%" },
-})
-
-injectGlobalStyles()
-
 export const Box = Stitches.styled("div", {
   display: "flex",
 
@@ -53,7 +22,6 @@ export const Box = Stitches.styled("div", {
 })
 
 export const Button = Stitches.styled("button", {
-  // base styles
   display: "block",
   border: "none",
   borderRadius: "5px",
@@ -66,13 +34,13 @@ export const Button = Stitches.styled("button", {
   variants: {
     size: {
       sm: {
-        fontSize: "13px",
+        fontSize: "12px",
         height: "25px",
         paddingRight: "10px",
         paddingLeft: "10px",
       },
       lg: {
-        fontSize: "15px",
+        fontSize: "16px",
         height: "35px",
         paddingLeft: "15px",
         paddingRight: "15px",
@@ -96,14 +64,14 @@ export const Input = Stitches.styled("input", {
   variants: {
     size: {
       sm: {
-        fontSize: "13px",
-        height: "25px",
-        paddingRight: "10px",
-        paddingLeft: "10px",
+        fontSize: "12px",
+        height: "20px",
+        paddingRight: "8px",
+        paddingLeft: "8px",
       },
       lg: {
-        fontSize: "15px",
-        height: "35px",
+        fontSize: "16px",
+        height: "28px",
         paddingLeft: "15px",
         paddingRight: "15px",
       },
@@ -117,16 +85,6 @@ export const Container = Stitches.styled("div", {
   justifyContent: "center",
 
   variants: {
-    size: {
-      sm: {
-        width: "100%",
-        height: "50px",
-      },
-      lg: {
-        width: "100%",
-        height: "60px",
-      },
-    },
     align: {
       center: {
         alignItems: "center",
@@ -153,15 +111,6 @@ export const Navbar = Stitches.styled("nav", {
     bg: {
       primary: {
         backgroundColor: "white",
-      },
-      secondary: {
-        backgroundColor: "#009688",
-      },
-      danger: {
-        backgroundColor: "#f44336",
-      },
-      success: {
-        backgroundColor: "#4caf50",
       },
     },
   },

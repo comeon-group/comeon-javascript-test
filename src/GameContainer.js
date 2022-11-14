@@ -5,7 +5,7 @@ export function GameContainer() {
   const [games, setGames] = React.useState([])
   const [categories, setCategories] = React.useState([])
   const [filteredGames, setFilteredGames] = React.useState(games)
-  const [shown, setShown] = React.useState(true)
+  const [isShown, setIsShown] = React.useState(true)
 
   const filterGames = (id) =>
     games.filter((game) => game.categoryIds.includes(id))
@@ -27,9 +27,8 @@ export function GameContainer() {
   }, [games])
 
   return (
-    <Components.Box css={{ flexDirection: "row" }}>
-      <Components.Box css={{ justifyContent: "center" }} id="game-launch" />
-      {shown && (
+    <Components.Box>
+      {isShown && (
         <>
           <Components.Box
             align="left"
@@ -102,8 +101,8 @@ export function GameContainer() {
                     >
                       <Components.Button
                         onClick={() => {
-                          setShown(false)
-                          return window.comeon.game.launch(game.code)
+                          setIsShown(false)
+                          window.comeon.game.launch(game.code)
                         }}
                         size="sm"
                         bg="primary"
@@ -154,21 +153,26 @@ export function GameContainer() {
           </Components.Box>
         </>
       )}
-      {!shown && (
-        <Components.Box
-          onClick={() => {
-            setShown(true)
-            window.location.href = "/"
-          }}
-          css={{
-            paddingLeft: "50px",
-            fontWeight: "700",
-            cursor: "pointer",
-          }}
-        >
-          BACK TO GAMES
-        </Components.Box>
-      )}
+      <Components.Box>
+        <Components.Box id="game-launch" />
+        {!isShown && (
+          <Components.Box
+            onClick={() => {
+              setIsShown(true)
+              window.location.href = "/"
+            }}
+            css={{
+              paddingLeft: "50px",
+              paddingTop: "20px",
+              fontWeight: "700",
+              cursor: "pointer",
+              textDecoration: "underline",
+            }}
+          >
+            BACK TO GAMES
+          </Components.Box>
+        )}
+      </Components.Box>
     </Components.Box>
   )
 }
