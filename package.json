@@ -11,6 +11,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "mock-server": "json-server --watch mock/mock-data.json --port 3001 --middlewares mock/mock-api.js",
+    "full-app": "yarn start & yarn mock-server",
     "build": "react-scripts build",
     "lint": "eslint .",
     "prepare": "husky install"
