@@ -1,0 +1,57 @@
+{
+  "name": "comeon-javascript-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "mock-server": "json-server --watch mock/mock-data.json --port 3001 --middlewares mock/mock-api.js",
+    "full-app": "yarn start & yarn mock-server",
+    "build": "react-scripts build",
+    "lint": "eslint .",
+    "prepare": "husky install"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5"
+  }
+}
