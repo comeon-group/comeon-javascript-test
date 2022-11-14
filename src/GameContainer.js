@@ -175,7 +175,11 @@ export function GameContainer() {
         </>
       )}
       <Components.Box
-        css={{ width: "100%", display: !isShown ? "flex" : "none" }}
+        css={{
+          width: "100%",
+          display: !isShown ? "flex" : "none",
+          flexDirection: "column",
+        }}
       >
         <Components.Box id="game-launch" css={{ width: "100%" }} />
         {!isShown && (
