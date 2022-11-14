@@ -181,7 +181,7 @@ export function GameContainer() {
           flexDirection: "column",
         }}
       >
-        <Components.Box id="game-launch" css={{ width: "100%" }} />
+        <Components.Box id="game-launch" />
         {!isShown && (
           <Components.Box
             onClick={() => {
