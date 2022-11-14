@@ -6,9 +6,22 @@ export function GameContainer() {
   const [categories, setCategories] = React.useState([])
   const [filteredGames, setFilteredGames] = React.useState(games)
   const [isShown, setIsShown] = React.useState(true)
+  const [searchInput, setSearchInput] = React.useState("")
 
   const filterGames = (id) =>
     games.filter((game) => game.categoryIds.includes(id))
+
+  const searchHandler = (e) => setSearchInput(e.target.value.toLowerCase())
+
+  React.useEffect(() => {
+    const filtered = games.filter((game) => {
+      if (searchInput === "") {
+        return game
+      }
+      return game.name.toLowerCase().includes(searchInput)
+    })
+    setFilteredGames(filtered)
+  }, [games, searchInput])
 
   React.useEffect(() => {
     fetch("http://localhost:3001/games")
@@ -135,6 +148,14 @@ export function GameContainer() {
               }}
             >
               Categories
+            </Components.Box>
+            <Components.Box>
+              <Components.Input
+                size="sm"
+                placeholder="Search"
+                onChange={searchHandler}
+                css={{ width: "100%" }}
+              />
             </Components.Box>
             {categories.map((category) => (
               <Components.Box

@@ -30,7 +30,7 @@ export function Login() {
       } else {
         toast.error(res.error, {
           position: "top-right",
-          autoClose: 2000,
+          autoClose: 1500,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
