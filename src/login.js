@@ -30,7 +30,7 @@ export function Login() {
       } else {
         toast.error(res.error, {
           position: "top-right",
-          autoClose: 1500,
+          autoClose: 500,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -46,7 +46,7 @@ export function Login() {
     <Components.Container
       align="center"
       css={{
-        padding: "40px",
+        paddingTop: "40px",
         width: "100%",
         height: "100%",
       }}
