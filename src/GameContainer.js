@@ -66,7 +66,7 @@ export function GameContainer() {
                   flexDirection: "column",
                   paddingTop: "8px",
                   width: "100%",
-                  maxWidth: "500px",
+                  maxWidth: "700px",
                   "&:after": {
                     content: "",
                     border: "1px solid grey",

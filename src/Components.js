@@ -11,7 +11,6 @@ export const Box = Stitches.styled("div", {
       },
       left: {
         alignItems: "flex-start",
-        justifyContent: "center",
       },
       right: {
         alignItems: "flex-end",
