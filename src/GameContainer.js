@@ -174,8 +174,10 @@ export function GameContainer() {
           </Components.Box>
         </>
       )}
-      <Components.Box>
-        <Components.Box id="game-launch" />
+      <Components.Box
+        css={{ width: "100%", display: !isShown ? "flex" : "none" }}
+      >
+        <Components.Box id="game-launch" css={{ width: "100%" }} />
         {!isShown && (
           <Components.Box
             onClick={() => {
@@ -183,7 +185,6 @@ export function GameContainer() {
               window.location.href = "/"
             }}
             css={{
-              paddingLeft: "50px",
               paddingTop: "20px",
               fontWeight: "700",
               cursor: "pointer",

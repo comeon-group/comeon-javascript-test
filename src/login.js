@@ -69,6 +69,7 @@ export function Login() {
           <Components.Input
             size="sm"
             placeholder="Password"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <Components.Box
