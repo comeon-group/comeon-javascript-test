@@ -1,4 +1,4 @@
-![comeon-javascript-test-site](http://b5fa2dae67bf7ee0b0e5-e0d56d540e31d5f2f9430984d20d712d.r41.cf3.rackcdn.com/comeon-javascript-test_3.png)
+![comeon-javascript-test-site](example.png)
 # comeon-javascript-test
 
 Applicant's test for Javascript coders.
@@ -141,7 +141,7 @@ fetch('http://localhost:3001/games', { method: 'get' });
 We have written an API for loading the games. Here's a simple example of how to load a game through our API:
 
 ```javascript
-comeon.game.launch('starburst');
+comeon.game.launch('feastingfox');
 ```
 
 It basically takes a game code as an in parameter.
@@ -160,3 +160,6 @@ Pull requests welcome, and maybe [we have a job for you](http://jobs.comeon.com/
 ## How to Submit the Home Assignment
 We would prefer that you push the code to a git repo and send us the link, but you could also send us your code in a compressed file in an email.
 
+## QuickSpin Games
+
+All of the linked games and their media files and descriptions are properties of QuickSpin AB and can be found publicly on their web site at https://quickspin.com/
