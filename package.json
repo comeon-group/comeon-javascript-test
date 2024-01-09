@@ -1,0 +1,29 @@
+{
+  "name": "comeon",
+  "version": "1.0.0",
+  "description": "My ComeOn Assignment",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test",
+    "start": "parcel index.html --port 3002"
+  },
+  "author": "Indu",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@stitches/react": "^1.2.8",
+    "font-awesome": "^4.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "react-toastify": "^9.1.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  }
+}
