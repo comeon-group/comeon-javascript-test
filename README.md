@@ -59,6 +59,8 @@ npm install -g json-server
 json-server --watch mock/mock-data.json --port 3001 --middlewares mock/mock-api.js
 ```
 
+Update: Use json-server version other than latest or alpha for example 0.17.3 or lower.
+
 ## API
 There are four methods on the API: login, logout, games, and categories.
 
